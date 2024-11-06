@@ -1,10 +1,10 @@
 body {
     font-family: Arial, sans-serif; /*set font family*/
-    background-color: #f7f7f7; /*background color*/
+    background-color: lightgray; /*background color*/
     color: #333333; /*test color*/
     display: flex; /*flexbox layout*/
     flex-direction: column; /*arrange elements in column*/
-    align-content: center; /*center elements horizontally*/
+    align-items: center; /*center elements horizontally*/
     justify-content: center; /*center elements vertically*/
     height: 100vh; /*full viewport height*/
     margin: 0; /*remove default margin*/
@@ -21,7 +21,9 @@ label, input, button {
 input {
     padding: 8px; /*padding inside inputs*/
     font-size: 16px; /*input font size*/
+    font-weight: bold;
     border: 2px solid #d35400; /*color border*/
+    background-color: darkgrey;
     border-radius: 4px; /*rounded corners*/
 }
 
@@ -43,5 +45,6 @@ button:hover {
 #result {
     margin-top: 20px; /*margin above result text*/
     font-size: 18px; /*result text font  size*/
+    font-weight: bold;
     color: #e67e33; /*result text color*/
 }

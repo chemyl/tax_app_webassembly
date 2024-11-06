@@ -8,15 +8,31 @@
 </head>
 <body>
 
+<h1>Tax Calculator </h1>
 <label for="income"> Income:</label>
 <input type="number" id="income" name="income" min="0">
 <button id="calculateButton"> Calculate Tax</button>
 <p id="result"></p>
-<script type = "module" src="tax.js"></script>
+<script type = "module">
+    import init, { calculate_tax } from "/pkg/tax_app_webassembly.js";
 
-<!-- Футер страницы -->
+    async function run() {
+        await init();
+
+        function calculateTax() {
+            const income = parseFloat(document.getElementById("income").value);
+            const tax = calculate_tax(income);
+            document.getElementById("result").innerText = `Tax: $${tax.toFixed(2)}`;
+        }
+        document.getElementById("calculateButton").addEventListener("click", calculateTax);
+    }
+
+    run();
+
+
+</script>
 <footer>
-    <p>&copy; 2024 github.com/chemyl </p>
+    <p>2024 github.com/chemyl </p>
 </footer>
 
 </body>
