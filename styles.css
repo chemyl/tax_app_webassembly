@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif; /*set font family*/
+    background-color: #f7f7f7; /*background color*/
+    color: #333333; /*test color*/
+    display: flex; /*flexbox layout*/
+    flex-direction: column; /*arrange elements in column*/
+    align-content: center; /*center elements horizontally*/
+    justify-content: center; /*center elements vertically*/
+    height: 100vh; /*full viewport height*/
+    margin: 0; /*remove default margin*/
+}
+
+h1 {
+    color: #d35400; /*heading color*/
+}
+
+label, input, button {
+    margin: 10px 0; /*margin for form elements*/
+}
+
+input {
+    padding: 8px; /*padding inside inputs*/
+    font-size: 16px; /*input font size*/
+    border: 2px solid #d35400; /*color border*/
+    border-radius: 4px; /*rounded corners*/
+}
+
+button {
+    padding: 10px 20px; /*padding inside button*/
+    font-size: 16px; /*button font size*/
+    background-color: #e67e22; /*background color*/
+    color: #fff; /*text color*/
+    border: none; /*remove border*/
+    border-radius: 4px; /*rounded corners*/
+    cursor: pointer; /*pointer cursor on hover*/
+    transition: background-color 0.3s ease; /*smooth background color transition*/
+}
+
+button:hover {
+    background-color: #d35400; /*darker color on hover*/
+}
+
+#result {
+    margin-top: 20px; /*margin above result text*/
+    font-size: 18px; /*result text font  size*/
+    color: #e67e33; /*result text color*/
+}
