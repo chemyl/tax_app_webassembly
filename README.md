@@ -14,4 +14,4 @@
 - start server in project root folder -> `http-server .`
 - switch to `localhost`
 
-![launcher window](https://github.com/chemyl/tax_app_webassembly/img.png)
+![launcher window](https://github.com/chemyl/tax_app_webassembly/blob/master/img.png)
