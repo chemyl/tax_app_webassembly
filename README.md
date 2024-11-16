@@ -1,7 +1,7 @@
 ### Basic project of interpreting Rust code into a web application using WebAssembly
 
 ![Rust Version](https://img.shields.io/badge/rust-1.82.0%20-green)
-![Build Status](https://github.com/chemyl/tax_app_webassembly/actions/workflows/ci.yml/badge.svg)
+![Build Status](https://github.com/chemyl/tax_app_webassembly/actions/workflows/rust.yml/badge.svg)
 
 - create library crate -> `cargo new project --lib`
 - add dependency to `cargo.toml`-> `wasm-bindgen = "0.2.+"`
