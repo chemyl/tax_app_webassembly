@@ -5,8 +5,9 @@ use wasm_bindgen::prelude::*;
 #[wasm_bindgen]
 pub fn calculate_tax(income: f64) -> f64 {
     let mut tax = 0.0;
-
-    if income <= 9875.0 {
+    if income < 0.0 {
+        tax = 0.0;
+    } else if income <= 9875.0 {
         tax = income * 0.10;
     } else if income <= 40125.0 {
         tax = 987.5 + (income - 9875.0) * 0.12;
@@ -26,7 +27,7 @@ pub fn calculate_tax(income: f64) -> f64 {
 
 #[cfg(test)]
 mod tests {
-    use super::*;
+    use crate::calculate_tax;
 
     #[test]
     fn test_calculate_tax() {
